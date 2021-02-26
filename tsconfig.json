@@ -1,0 +1,17 @@
+{
+  "compileOnSave": true,
+  "exclude": [
+    "build",
+    "node_modules"
+  ],
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "ES2020"
+    ],
+    "outDir": "build",
+    "watch": true
+  }
+}
