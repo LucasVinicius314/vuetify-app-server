@@ -14,7 +14,8 @@ router.post('/api/product/create', async (req, res) => {
     .then(() => {
       res.status(201).json({ message: 'Product created' })
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log(error)
       res.status(400).json({ message: 'Error' })
     })
 })
@@ -39,7 +40,8 @@ router.post('/api/product/update/:id', async (req, res) => {
     .then(() => {
       res.status(200).json({ message: 'Product updated' })
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log(error)
       res.status(400).json({ message: 'Error' })
     })
 })
